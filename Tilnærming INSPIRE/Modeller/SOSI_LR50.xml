@@ -1,0 +1,2375 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0" xmlns:NIEM_Common_Profile="http://www.sparxsystems.com/profiles/NIEM_Common_Profile/1.0">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE" visibility="public">
+			<ownedComment xmi:type="uml:Comment" xmi:id="EAID_4D58213F_A3DE_4d29_8316_B0AEF2A31EA3" body="Identifikasjon">
+				<annotatedElement xmi:idref="EAID_B2FB7FC7_16BD_4979_9170_96660FB7E9C0"/>
+			</ownedComment>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" name="Nettverkselement" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_4B81E6F9_23BD_4a7f_BBC2_2D72756F6DF0" name="identifikasjon" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_953CE893_18AF_4923_B143_4BC4CCB7221B"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_23BD_4a7f_BBC2_2D72756F6DF0" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000002_23BD_4a7f_BBC2_2D72756F6DF0" value="1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_4BDC00A7_791B_4c10_BC6A_BCA30BA4570C" visibility="public" supplier="EAID_CDB8B6E5_8074_434d_B021_DDB0C82D380B" client="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_D061EB77_A390_49ec_B14C_ED92030DC7C2" visibility="public" supplier="EAID_56AD112F_CEF9_4096_B51E_46E30673370A" client="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" visibility="public">
+				<memberEnd xmi:idref="EAID_dst352A46_DBBB_4c12_963D_35AB6516027A"/>
+				<memberEnd xmi:idref="EAID_src352A46_DBBB_4c12_963D_35AB6516027A"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src352A46_DBBB_4c12_963D_35AB6516027A" visibility="public" association="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" name="GeneralisertLenke" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_08AACBA8_5E6A_426c_A501_BC789A2756B1" name="standardLRM" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003_5E6A_426c_A501_BC789A2756B1" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000004_5E6A_426c_A501_BC789A2756B1" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_5B01A452_89F0_4612_9908_0CFAA15A0CC9" name="måltLengde" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005_89F0_4612_9908_0CFAA15A0CC9" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000006_89F0_4612_9908_0CFAA15A0CC9" value="1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" general="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_5DA6AF06_7D21_4735_B73A_435072C12B60" visibility="public" supplier="EAID_7D9F1E1B_778E_4249_8CDF_934B7B4C3F7D" client="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" name="Lenkesekvens" visibility="public" isAbstract="true">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" general="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_src824BB3_F1B6_4b0d_B7DD_066044371A2E" name="sekvensdel" visibility="public" association="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007__F1B6_4b0d_B7DD_066044371A2E" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000008__F1B6_4b0d_B7DD_066044371A2E" value="-1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_237B3734_81C5_4fb1_A047_E0767DD87EF0" visibility="public" supplier="EAID_499363BF_41C1_42c1_BAC0_9DA42FDDB5C5" client="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" visibility="public">
+				<memberEnd xmi:idref="EAID_dst824BB3_F1B6_4b0d_B7DD_066044371A2E"/>
+				<memberEnd xmi:idref="EAID_src824BB3_F1B6_4b0d_B7DD_066044371A2E"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" name="Lenke" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_DC4D43F2_2F67_4fe2_A2BB_2E2C4173ECB6" name="startverdi" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000009_2F67_4fe2_A2BB_2E2C4173ECB6" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000010_2F67_4fe2_A2BB_2E2C4173ECB6" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_47D1A243_5118_4c49_B86C_BC8F0816AA61" name="sluttverdi" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011_5118_4c49_B86C_BC8F0816AA61" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000012_5118_4c49_B86C_BC8F0816AA61" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst824BB3_F1B6_4b0d_B7DD_066044371A2E" name="sekvens" visibility="public" association="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000013__F1B6_4b0d_B7DD_066044371A2E" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000014__F1B6_4b0d_B7DD_066044371A2E" value="1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" general="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_3ED7A4BB_9EA2_4254_95B4_61E4B889AA99" visibility="public" supplier="EAID_CCF70314_06E1_457b_A605_9B32CAE9AAEF" client="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" name="LineærPosisjon" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_74B4C8B5_B624_407c_BA18_EE7E272AFCB8" name="lineærReferanseMetode" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000015_B624_407c_BA18_EE7E272AFCB8" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000016_B624_407c_BA18_EE7E272AFCB8" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_33975603_7F0E_4810_AE2E_0B6CB271DABD" name="felt" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_453EB6B1_D543_4f3d_BC53_E79283F6736C"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017_7F0E_4810_AE2E_0B6CB271DABD" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000018_7F0E_4810_AE2E_0B6CB271DABD" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_C6905B18_8CA1_4922_8423_47ACE9B2F831" name="avstandSide" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_8CA1_4922_8423_47ACE9B2F831" value="0"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000020_8CA1_4922_8423_47ACE9B2F831" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst352A46_DBBB_4c12_963D_35AB6516027A" name="nettverkselement" visibility="public" association="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_7D010A97_026B_4b59_926E_07E29C1D0A8C" visibility="public" supplier="EAID_E0FBB71C_16C1_4ec8_9EE9_E4FA2F82B39B" client="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" name="LineærPosisjonPunkt" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_0FCFA4B1_72F9_43fe_B84E_286A71FD303B" name="posisjon" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000021_72F9_43fe_B84E_286A71FD303B" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000022_72F9_43fe_B84E_286A71FD303B" value="1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" general="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_32C2A70E_1F03_431e_A611_3B824A62D3E9" visibility="public" supplier="EAID_7B02123F_8A3D_4165_8E33_ED3856B50638" client="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447"/>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_DE934390_16F9_4b71_B069_6637E9C5CBBC" visibility="public" supplier="EAID_939E1F5E_A19C_4ced_AB5E_4D7D2A72BDA9" client="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" name="LineærPosisjonStrekning" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_54A50C3F_CDD1_4672_ABD9_03132F3543DF" name="fraPosisjon" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000023_CDD1_4672_ABD9_03132F3543DF" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000024_CDD1_4672_ABD9_03132F3543DF" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_B4BC3101_1F84_4b49_816C_E51469407AC7" name="tilPosisjon" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<type xmi:idref="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000025_1F84_4b49_816C_E51469407AC7" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000026_1F84_4b49_816C_E51469407AC7" value="1"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" general="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_582AC2C8_EB4E_4581_9B9C_6780F299E4B1" visibility="public" supplier="EAID_A0EE42AB_DE84_40f7_8B34_CEE37B2FBB7C" client="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B"/>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_81370E57_9B3E_4335_AD6A_ED20C1B59DDD" visibility="public" supplier="EAID_4B9FADFC_5EEC_462b_B616_9966E71C2E39" client="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B"/>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" name="LineærReferanseMetode" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_0C945466_99B9_4d6e_A202_5E92E3FF3DFC" name="Metrering" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000027_99B9_4d6e_A202_5E92E3FF3DFC" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000028_99B9_4d6e_A202_5E92E3FF3DFC" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_709B6C1B_FE74_4be8_8000_11E062C13293" name="Normalisert" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000029_FE74_4be8_8000_11E062C13293" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000030_FE74_4be8_8000_11E062C13293" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_90E5F8C9_8CCD_4bee_88AD_218D71895359" name="Prosent" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000031_8CCD_4bee_88AD_218D71895359" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000032_8CCD_4bee_88AD_218D71895359" value="1"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_A54E25F6_4A81_445b_93FB_C40477CD1754" name="Kilometrering" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000033_4A81_445b_93FB_C40477CD1754" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000034_4A81_445b_93FB_C40477CD1754" value="1"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Realization" xmi:id="EAID_9423188F_7598_4520_BFC0_0786B80246C8" visibility="public" supplier="EAID_C6AAD51C_2A2D_404e_A297_EB0369087A9F" client="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A"/>
+			<packagedElement xmi:type="uml:Dependency" xmi:id="EAID_B2FB7FC7_16BD_4979_9170_96660FB7E9C0" visibility="public" supplier="EAPK_1DB15898_E0F9_4d15_A64A_07BBC8596D66" client="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+		</packagedElement>
+		<thecustomprofile:featureType base_Class="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+		<thecustomprofile:SOSI_primærnøkkel base_Property="EAID_4B81E6F9_23BD_4a7f_BBC2_2D72756F6DF0" SOSI_primærnøkkel="true"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_src352A46_DBBB_4c12_963D_35AB6516027A" SOSI_navn="LROBJREF_S"/>
+		<thecustomprofile:SOSI_assosiasjon base_Association="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" SOSI_assosiasjon="primærnøkler"/>
+		<thecustomprofile:SOSI_navn base_Association="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" SOSI_navn="LROBJREF"/>
+		<thecustomprofile:featureType base_Class="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_5B01A452_89F0_4612_9908_0CFAA15A0CC9" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_5B01A452_89F0_4612_9908_0CFAA15A0CC9" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_5B01A452_89F0_4612_9908_0CFAA15A0CC9" SOSI_navn="LRMÅLTLENGDE"/>
+		<thecustomprofile:featureType base_Class="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3"/>
+		<thecustomprofile:SOSI__featureType base_Class="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" __EAStereoName="SOSI::featureType"/>
+		<thecustomprofile:SOSI_fremmednøkkel base_Class="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" SOSI_fremmednøkkel="identifikasjon"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_DC4D43F2_2F67_4fe2_A2BB_2E2C4173ECB6" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_DC4D43F2_2F67_4fe2_A2BB_2E2C4173ECB6" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_DC4D43F2_2F67_4fe2_A2BB_2E2C4173ECB6" SOSI_navn="LRSTARTVERDI"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_47D1A243_5118_4c49_B86C_BC8F0816AA61" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_47D1A243_5118_4c49_B86C_BC8F0816AA61" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_47D1A243_5118_4c49_B86C_BC8F0816AA61" SOSI_navn="LRSLUTTVERDI"/>
+		<thecustomprofile:SOSI__dataType base_Class="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" __EAStereoName="SOSI::dataType"/>
+		<thecustomprofile:SOSI_navn base_Class="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" SOSI_navn="LRPOSISJON"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_33975603_7F0E_4810_AE2E_0B6CB271DABD" SOSI_lengde="20"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_33975603_7F0E_4810_AE2E_0B6CB271DABD" SOSI_navn="VKJORFELT"/>
+		<thecustomprofile:SOSI_dataytype base_Property="EAID_33975603_7F0E_4810_AE2E_0B6CB271DABD" SOSI_dataytype="T"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_C6905B18_8CA1_4922_8423_47ACE9B2F831" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_C6905B18_8CA1_4922_8423_47ACE9B2F831" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_C6905B18_8CA1_4922_8423_47ACE9B2F831" SOSI_navn="LRAVSTANDSIDE"/>
+		<thecustomprofile:Erling1 base_Property="EAID_C6905B18_8CA1_4922_8423_47ACE9B2F831" Erling1="Hei"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_dst352A46_DBBB_4c12_963D_35AB6516027A" SOSI_navn="LROBJREF_T"/>
+		<thecustomprofile:SOSI__dataType base_Class="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" __EAStereoName="SOSI::dataType"/>
+		<thecustomprofile:SOSI_navn base_Class="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" SOSI_navn="LRPUNKT"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_0FCFA4B1_72F9_43fe_B84E_286A71FD303B" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_0FCFA4B1_72F9_43fe_B84E_286A71FD303B" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_0FCFA4B1_72F9_43fe_B84E_286A71FD303B" SOSI_navn="LRPUNKTPOSISJON"/>
+		<thecustomprofile:SOSI__dataType base_Class="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" __EAStereoName="SOSI::dataType"/>
+		<thecustomprofile:SOSI_navn base_Class="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" SOSI_navn="LRSTREKNING"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_54A50C3F_CDD1_4672_ABD9_03132F3543DF" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_54A50C3F_CDD1_4672_ABD9_03132F3543DF" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_54A50C3F_CDD1_4672_ABD9_03132F3543DF" SOSI_navn="LRFRAPOSISJON"/>
+		<thecustomprofile:SOSI_lengde base_Property="EAID_B4BC3101_1F84_4b49_816C_E51469407AC7" SOSI_lengde="10"/>
+		<thecustomprofile:SOSI_datatype base_Property="EAID_B4BC3101_1F84_4b49_816C_E51469407AC7" SOSI_datatype="D"/>
+		<thecustomprofile:SOSI_navn base_Property="EAID_B4BC3101_1F84_4b49_816C_E51469407AC7" SOSI_navn="LRTILPOSISJON"/>
+		<thecustomprofile:SOSI_lengde base_Class="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" SOSI_lengde="20"/>
+		<thecustomprofile:SOSI__codeList base_Class="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" __EAStereoName="SOSI::codeList"/>
+		<thecustomprofile:SOSI_datatype base_Class="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" SOSI_datatype="T"/>
+		<thecustomprofile:SOSI_navn base_Class="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" SOSI_navn="LRLRM"/>
+		<NIEM_Common_Profile:Namespace base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" version="1.0" targetNamespace="http://skjema.geonorge.no/legg_inn_riktig_url"/>
+		<thecustomprofile:applicationSchema base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+		<thecustomprofile:xsdEncodingRule base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" xsdEncodingRule="sosi"/>
+		<thecustomprofile:xmlns base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" xmlns="app"/>
+		<thecustomprofile:SOSI_spesifikasjonstype base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" SOSI_spesifikasjonstype="produktspesifikasjon"/>
+		<thecustomprofile:xsdDocument base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" xsdDocument="filnavn.xsd"/>
+		<thecustomprofile:SOSI_produktgruppe base_Package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" SOSI_produktgruppe="produktspes"/>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" xmi:type="uml:Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE" scope="public">
+				<model package2="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" package="EAPK_EF880EA2_EED8_4a31_8F52_AA8BD8BF068D" tpos="0" ea_localid="10356" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public" stereotype="applicationSchema"/>
+				<project author="knjetl" version="4.5" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 08:44:00" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_DEC125F0_E05B_c4e0_B466_4F831977A048" name="SOSI_kortnavn" value="#NOTES#Description: Brukes til filnavn for def filer&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_8B13C732_819D_1781_8083_C2FB2D30F6D3" name="SOSI_langnavn" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_E81DA28B_9A76_fe9a_AA5E_4E2EC5EAAA22" name="SOSI_organisasjon" value="#NOTES#Description: Brukes i objektkatalog som ansvarlig organisasjon&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_D50E40B9_3604_0e36_8A18_ABF1701142AD" name="SOSI_produktgruppe" value="produktspes#NOTES#Values: sosi,produktspes,fagområde,fkb,kartdata,arealis,arealplan,vegdata&#xA;Default: produktspes&#xA;Description: Brukes til katalogstruktur for def filer&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_B66099C1_A18C_dba1_971C_FDA4E035C58A" name="SOSI_produsent" value="#NOTES#Description: brukes i objektkatalog som kontaktperson&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_A37A7EEB_7B16_ae7b_9094_8DE3A63299D7" name="SOSI_spesifikasjonstype" value="produktspesifikasjon#NOTES#Values: produktspesifikasjon,fagområde&#xA;Default: produktspesifikasjon&#xA;Description: Brukes til å formatere Word tabeller i Syntaks rapport. Standard kolonne er ikke med når det er en produktspesifikasjon. Ved fagområde så blir SOSI_Objekt lagt til INKLUDER på alle objektdefenisjoner&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_83FDE7A4_80AF_ee80_BB25_ACEFA72B7D18" name="SOSI_versjon" value="#NOTES#Description: Brukes som filendelse i sosi def filer&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_393CD814_819F_cc81_BE67_084AEE8A6CD7" name="targetNamespace" value="http://skjema.geonorge.no/legg_inn_riktig_url#NOTES#Default: http://skjema.geonorge.no/legg_inn_riktig_url&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_6F40CEE6_1D91_d11d_986B_C7C3762FE62E" name="version" value="1.0#NOTES#Default: 1.0&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_08B91BD2_C3BD_ffc3_84DA_6667A200D95B" name="xmlns" value="app#NOTES#Default: app&#xA;Description: Namespace prefix (or) the abbreviated short form  &#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_6E79370E_4719_5c47_B35D_3D3A02B06A1F" name="xsdDocument" value="filnavn.xsd#NOTES#Default: filnavn.xsd&#xA;Description: Valid file name or relative file name of the XSD f&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+					<tag xmi:id="EAID_BCD3CBEE_5D59_745d_BB77_1AD4C285C2C9" name="xsdEncodingRule" value="sosi#NOTES#Values: sosi,iso19136_2007,iso19136_2007_ShapeChange_1.0_Extensions,iso19136_2007_INSPIRE_Extensions,iso19139_2007,gml33,citygml-ade,metadata-profile,gsip&#xA;Default: sosi&#xA;Description: XML Schema encoding rule to apply&#xA;" modelElement="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={6C9F01D8-5B88-4480-BB62-63999CBC8EE5}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=applicationSchema;GUID={F4D21226-9BC3-488b-B466-3A26C058CF63};@ENDSTEREO;$DES;$CLT={F7ED89FA-3DEB-48de-B6A9-84A5DDD4A814}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Sandkasse"/>
+				<packageproperties version="4.5" xmiver="Enterprise Architect XMI/UML 1.3" tpos="0"/>
+				<paths/>
+				<times created="2015-09-30 08:43:39" modified="2015-09-30 08:44:00" lastloaddate="2015-04-16 07:26:30" lastsavedate="2012-04-26 13:01:14"/>
+				<flags iscontrolled="FALSE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="Recurse=0;"/>
+			</element>
+			<element xmi:idref="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" xmi:type="uml:Class" name="Nettverkselement" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="1" ea_localid="78563" ea_eleType="element"/>
+				<properties documentation="Abstrakt objekttype som representerer et element i et nettverk. &#xA;&lt;i&gt;Realisering av INSPIRE Network:NetworkElement&lt;/i&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="featureType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:46:12" modified="2015-09-30 08:59:44" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={52F28A3F-09AC-4ad7-81BD-F814913C24E6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=featureType;GUID={69017930-FAB1-4684-87CE-DB0B4E230A68};@ENDSTEREO;$DES;$CLT={18BC92AE-F6CD-419c-B0D5-4D4676BBE559}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<attributes>
+					<attribute xmi:idref="EAID_4B81E6F9_23BD_4a7f_BBC2_2D72756F6DF0" name="identifikasjon" scope="Public">
+						<initial/>
+						<documentation value="Unik identifikasjon av nettverkselementet"/>
+						<model ea_localid="460271" ea_guid="{4B81E6F9-23BD-4a7f-BBC2-2D72756F6DF0}"/>
+						<properties type="Identifikasjon" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags>
+							<tag xmi:id="EAID_AABB9F33_2A6E_4f7e_8A78_8E2336C1F4E8" name="SOSI_primærnøkkel" value="true"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Realisation xmi:id="EAID_4BDC00A7_791B_4c10_BC6A_BCA30BA4570C" start="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" end="EAID_CDB8B6E5_8074_434d_B021_DDB0C82D380B"/>
+					<Realisation xmi:id="EAID_D061EB77_A390_49ec_B14C_ED92030DC7C2" start="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" end="EAID_56AD112F_CEF9_4096_B51E_46E30673370A"/>
+					<Generalization xmi:id="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" start="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" end="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+					<Association xmi:id="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" start="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" end="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" xmi:type="uml:Class" name="GeneralisertLenke" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="2" ea_localid="78557" ea_eleType="element"/>
+				<properties documentation="Abstrakt, generalisert objekttype for nettverkslenker, med generelle egenskaper som muliggjør lineære referanser til lenkene&#xA;&lt;i&gt;Realisering av INSPIRE Network:GeneralisedLink og ISO19148 LR_Feature.&lt;/i&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="featureType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:30:48" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={672CF6EE-F470-4ccc-AF7B-059FE4AEA6F0}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=featureType;GUID={69017930-FAB1-4684-87CE-DB0B4E230A68};@ENDSTEREO;$DES;$CLT={C7889175-24F5-4579-9316-E9BC76B0671E}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<attributes>
+					<attribute xmi:idref="EAID_08AACBA8_5E6A_426c_A501_BC789A2756B1" name="standardLRM" scope="Public">
+						<initial/>
+						<documentation value="Standard metode som brukes for å angi lineære referanser til lenken&#xA;&#xA;Merknad: Kan overstyres for den enkelte posisjonsangivelse. &#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: LR_ILinearElement ::defaultLRM() : LR_LinearReferencingMethod&lt;/i&gt;&lt;/font&gt;"/>
+						<model ea_localid="460262" ea_guid="{08AACBA8-5E6A-426c-A501-BC789A2756B1}"/>
+						<properties type="LineærReferanseMetode" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style value="STANDARDLRM"/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_5B01A452_89F0_4612_9908_0CFAA15A0CC9" name="måltLengde" scope="Public">
+						<initial/>
+						<documentation value="Målt lengde for lenken, innenfor lenkens lineære referansesystem&#xA;&#xA;Merknad: Målt lengde overstyrer geometrilengde. &#xA;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: LR_ILinearElement ::measure(measureAttribute : CharacterString = defaultLength) : Measure&lt;/i&gt;&lt;/font&gt;"/>
+						<model ea_localid="460263" ea_guid="{5B01A452-89F0-4612-9908-0CFAA15A0CC9}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style value="STARTVERDI"/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags>
+							<tag xmi:id="EAID_43113051_C4DC_43b5_B5D4_08C2E610BF51" name="SOSI_navn" value="LRMÅLTLENGDE"/>
+							<tag xmi:id="EAID_DC0DD846_98A7_440c_BF38_8401A585515A" name="SOSI_datatype" value="D"/>
+							<tag xmi:id="EAID_3E13AF52_A626_41e2_ACB8_51A20A2F3B5D" name="SOSI_lengde" value="10"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" start="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" end="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+					<Realisation xmi:id="EAID_5DA6AF06_7D21_4735_B73A_435072C12B60" start="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" end="EAID_7D9F1E1B_778E_4249_8CDF_934B7B4C3F7D"/>
+					<Generalization xmi:id="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" start="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" end="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+					<Generalization xmi:id="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" start="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" end="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" xmi:type="uml:Class" name="Lenkesekvens" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="3" ea_localid="78554" ea_eleType="element"/>
+				<properties documentation="Abstrakt objekttype for sekvenser av lenker.&#xA;Eksempel: En sammenhengende rute bestående av flere dellenker &#xA;&lt;i&gt;Realisering av INSPIRE Network:LinkSequence&lt;/i&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="featureType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:05:26" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={DAFADF62-E838-4346-A26C-FCB2E02CDB1C}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=featureType;GUID={69017930-FAB1-4684-87CE-DB0B4E230A68};@ENDSTEREO;$DES;$CLT={03E2BE41-2BE0-4aa7-85DF-487B125838C3}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<links>
+					<Realisation xmi:id="EAID_237B3734_81C5_4fb1_A047_E0767DD87EF0" start="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" end="EAID_499363BF_41C1_42c1_BAC0_9DA42FDDB5C5"/>
+					<Generalization xmi:id="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" start="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" end="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+					<Association xmi:id="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" start="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" end="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" xmi:type="uml:Class" name="Lenke" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="4" ea_localid="78553" ea_eleType="element"/>
+				<properties documentation="Abstrakt objekttype for nettverkslenker, med mulighet for å angi tilhørighet til og posisjon i en sekvens av lenker.&#xA;&#xA;Merknad: Lenkens posisjon i et nettverk og skalering av lengde i forhold til geometrilengde  kan angis på flere alternative måter:&#xA;&amp;nbsp;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Kun startVerdi. Målt lengde og sluttverdi er lik geometrilengde       &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;Kombinasjonen startVerdi-sluttVerdi. Målt lengde er lik differansen mellom disse egenskapene.       &lt;/li&gt;&#xA;	&lt;li&gt;Kombinasjonen startVerdi-måltLengde. Sluttverdi er lik summen av disse egenskapene.       &lt;/li&gt;&#xA;	&lt;li&gt;Kun måltLengde. startverdi er lik 0, og sluttverdi er lik målt lengde       &lt;/li&gt;&#xA;	&lt;li&gt;Ingen av egenskapene angitt. Kun geometrien benyttes for beregning av posisjoner.       &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;i&gt;Realisering av INSPIRE Network:Link.&lt;/i&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="featureType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:06:48" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_63C99013_D22E_409d_8846_5156E1F421D2" name="SOSI_fremmednøkkel" value="identifikasjon" modelElement="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={A7C97ABB-77F0-417f-AD1C-C5FC43D60DAC}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=featureType;GUID={4B928B33-D268-47a0-B3FD-BC7B57005551};FQName=SOSI::featureType;@ENDSTEREO;$DES;$CLT={47BEF1AE-1E5E-46e2-946E-DCE1EA667FD8}$CLT;$ENDXREF;$XREFPROP=$XID={5193F184-4061-4070-BE74-84E784E6572C}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={47BEF1AE-1E5E-46e2-946E-DCE1EA667FD8}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<attributes>
+					<attribute xmi:idref="EAID_DC4D43F2_2F67_4fe2_A2BB_2E2C4173ECB6" name="startverdi" scope="Public">
+						<initial/>
+						<documentation value="&lt;font color=&quot;#0f0f0f&quot;&gt;startverdi for lenken i et lineært referansesystem&lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: For en veglenke med vegreferanse er dette den verdien vi tidligere har kjent som FRAMETER. &lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: &lt;/i&gt;&lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;LR_ILinearElement ::&lt;/i&gt;&lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;startValue(LRM : LinearReferencingMethod) : Measure&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460256" ea_guid="{DC4D43F2-2F67-4fe2-A2BB-2E2C4173ECB6}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="3"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style value="STARTVERDI"/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags>
+							<tag xmi:id="EAID_57C4A1A2_324C_43b7_9171_F036FE69A290" name="SOSI_navn" value="LRSTARTVERDI"/>
+							<tag xmi:id="EAID_40CAB7FB_FD19_4124_BBB9_F6FB36E7FCC5" name="SOSI_datatype" value="D"/>
+							<tag xmi:id="EAID_9BB46934_0529_4180_ACA9_DF66E85719B1" name="SOSI_lengde" value="10"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_47D1A243_5118_4c49_B86C_BC8F0816AA61" name="sluttverdi" scope="Public">
+						<initial/>
+						<documentation value="&lt;font color=&quot;#0f0f0f&quot;&gt;sluttverdi for lenken i et lineært referansesystem&lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: For en veglenke med vegreferanse er dette den verdien vi tidligere har kjent som TILMETER. &lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: Finnes ikke&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460257" ea_guid="{47D1A243-5118-4c49-B86C-BC8F0816AA61}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="4"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style value="STARTVERDI"/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags>
+							<tag xmi:id="EAID_F284DF32_500E_4ecc_9380_3E6B69FD6480" name="SOSI_navn" value="LRSLUTTVERDI"/>
+							<tag xmi:id="EAID_49975B97_9826_44d6_BB00_99F7415A8CE2" name="SOSI_datatype" value="D"/>
+							<tag xmi:id="EAID_72A111A6_08C8_4c86_AD8D_8B1FE1140324" name="SOSI_lengde" value="10"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<constraints>
+					<constraint name="startverdi og sluttverdi er påkrevd i sekvenser" type="Invariant" weight="1,00" status="Approved"/>
+					<constraint name="Subtyper skal ha kurvegeometri" type="Invariant" weight="0,00" status="Approved"/>
+				</constraints>
+				<links>
+					<Realisation xmi:id="EAID_3ED7A4BB_9EA2_4254_95B4_61E4B889AA99" start="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" end="EAID_CCF70314_06E1_457b_A605_9B32CAE9AAEF"/>
+					<Association xmi:id="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" start="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" end="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3"/>
+					<Generalization xmi:id="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" start="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" end="EAID_C7889175_24F5_4579_9316_E9BC76B0671E"/>
+					<Realisation xmi:id="EAID_1153D212_3E7A_4b45_A28F_43757DDFEE4B" start="EAID_C319FD33_1E94_45ce_9E3A_AFFC56A68C96" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<Generalization xmi:id="EAID_2095F20F_E1CF_4cfb_BB55_7A0060A1EAF3" start="EAID_0A75F035_95C1_44aa_998F_BDBAC2CBCED1" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<Generalization xmi:id="EAID_6F00C84C_3EBB_45db_8A15_DA533A787615" start="EAID_ED610B8C_6E4B_4aba_B93F_2C4C91DF2C39" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<Realisation xmi:id="EAID_7A8219D7_E2E8_4484_AC3C_96E0F5939D1D" start="EAID_B8E92058_814C_4a73_B670_B546A5AFEDDC" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<Generalization xmi:id="EAID_86BDF773_4B34_4259_B3B9_F21D96C0E0CA" start="EAID_18634B91_EEE9_455b_A16E_1C17CED6242A" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<Generalization xmi:id="EAID_AD3B42BC_F7C0_47eb_81C0_04CC72B66CDF" start="EAID_89557A26_8A0C_4cc4_8F16_59336E7BC28B" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<NoteLink xmi:id="EAID_D9A88DE1_1275_4e7b_9A33_C6E2CB7BE85C" start="EAID_BF08003C_3406_4d48_A2CC_07CFDAC11A32" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+					<Generalization xmi:id="EAID_F10C20D4_9F4F_4dc6_91C3_8D21FC9E3EFF" start="EAID_D021056C_1666_47c7_84C1_711A44CC7F12" end="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" xmi:type="uml:Class" name="LineærPosisjon" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="5" ea_localid="78558" ea_eleType="element"/>
+				<properties documentation="Angivelse av en posisjon langs et nettverkselement&#xA;&lt;font color=&quot;#ff0000&quot;&gt;&lt;i&gt;&#xA;&lt;/i&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;Realisering av ISO19148: LE_EventLocation&lt;/i&gt;&lt;/font&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="dataType" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:44:45" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_7414EF24_E764_447f_AF39_4BF7945E96F4" name="SOSI_navn" value="LRPOSISJON" modelElement="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={8FB8CA88-FF75-463c-B8F7-436D08802314}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@STEREO;Name=dataType;GUID={CD6A9266-6921-409c-8DD5-275757EE3C8D};FQName=SOSI::dataType;@ENDSTEREO;$DES;$CLT={EAC325C3-7D86-4b75-8DA4-B93990797AF8}$CLT;$ENDXREF;$XREFPROP=$XID={691F713F-9878-4efa-8C83-442599A17984}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={EAC325C3-7D86-4b75-8DA4-B93990797AF8}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<attributes>
+					<attribute xmi:idref="EAID_74B4C8B5_B624_407c_BA18_EE7E272AFCB8" name="lineærReferanseMetode" scope="Public">
+						<initial/>
+						<documentation value="metode som er brukt for å angi lineære referanser&#xA;&#xA;Merknad: Dersom verdi er angitt overstyrer denne standard metode for det refererte nettverkselementet. &#xA;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: overridingLRM&lt;/i&gt;&lt;/font&gt;"/>
+						<model ea_localid="460264" ea_guid="{74B4C8B5-B624-407c-BA18-EE7E272AFCB8}"/>
+						<properties type="LineærReferanseMetode" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_33975603_7F0E_4810_AE2E_0B6CB271DABD" name="felt" scope="Public">
+						<initial/>
+						<documentation value="Tekststreng som brukes dersom referansen gjelder bestemte kjørefelt&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: Finnes ikke&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460265" ea_guid="{33975603-7F0E-4810-AE2E-0B6CB271DABD}"/>
+						<properties type="CharacterString" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags>
+							<tag xmi:id="EAID_E2E581B8_B72B_4ece_8819_5A99F490B57C" name="SOSI_navn" value="VKJORFELT"/>
+							<tag xmi:id="EAID_FB4515BF_F8D6_4786_8580_1C941EB53DF6" name="SOSI_dataytype" value="T"/>
+							<tag xmi:id="EAID_F5AA39F4_5B5A_46ce_B4C1_F09E228A1011" name="SOSI_lengde" value="20"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_C6905B18_8CA1_4922_8423_47ACE9B2F831" name="avstandSide" scope="Public">
+						<initial/>
+						<documentation value="Forskyvning til side for nettverkselementet. Positivt tall betyr høyre side, negativt tall betyr venstre side.&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;i&gt;ISO19148: offsetLateralDistance&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460266" ea_guid="{C6905B18-8CA1-4922-8423-47ACE9B2F831}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype/>
+						<bounds lower="0" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags>
+							<tag xmi:id="EAID_6A2484B2_D9EA_4c80_977E_E585C9E2CDF9" name="SOSI_navn" value="LRAVSTANDSIDE"/>
+							<tag xmi:id="EAID_90879717_7ECB_4517_A05A_A0AA38D42D55" name="SOSI_datatype" value="D"/>
+							<tag xmi:id="EAID_9CE70B52_99B9_4344_8AD3_939D692F4F06" name="SOSI_lengde" value="10"/>
+							<tag xmi:id="EAID_AF59E7BE_EF8F_4b50_B99A_A1D11607FEF2" name="Erling1" value="Hei"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<constraints>
+					<constraint name="lineærReferanseMetode er påkrevd dersom ikke angitt på nettverkselement" type="Invariant" weight="0,00" status="Approved"/>
+				</constraints>
+				<links>
+					<Realisation xmi:id="EAID_7D010A97_026B_4b59_926E_07E29C1D0A8C" start="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" end="EAID_E0FBB71C_16C1_4ec8_9EE9_E4FA2F82B39B"/>
+					<Association xmi:id="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" start="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" end="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559"/>
+					<Generalization xmi:id="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" start="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" end="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+					<Generalization xmi:id="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" start="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" end="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" xmi:type="uml:Class" name="LineærPosisjonPunkt" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="6" ea_localid="78555" ea_eleType="element"/>
+				<properties documentation="lineær posisjon som et punkt&#xA;&#xA;Merknad:&#xA;Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.&#xA;LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).&#xA;&#xA;&lt;i&gt;Realisering av ISO19148: LE_AtLocation&lt;/i&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="dataType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:42:49" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_FE1670A6_1643_4dee_A440_F60FE3452483" name="SOSI_navn" value="LRPUNKT" modelElement="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={526C9398-47F7-430c-8E44-894293DC5E3A}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=dataType;GUID={CD6A9266-6921-409c-8DD5-275757EE3C8D};FQName=SOSI::dataType;@ENDSTEREO;$DES;$CLT={85A7ECD4-99BD-42ee-9AF0-49439BB2B447}$CLT;$ENDXREF;$XREFPROP=$XID={6949047D-20B6-473c-9531-4E37FC58FF1C}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={85A7ECD4-99BD-42ee-9AF0-49439BB2B447}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<attributes>
+					<attribute xmi:idref="EAID_0FCFA4B1_72F9_43fe_B84E_286A71FD303B" name="posisjon" scope="Public">
+						<initial/>
+						<documentation value="posisjon langs nettverkselementet, i henhold til referansemetoden &#xA;&#xA;Merknad: Ref&lt;font color=&quot;#0f0f0f&quot;&gt; &lt;i&gt;ISO19148: atPosition -  distanceAlong&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460258" ea_guid="{0FCFA4B1-72F9-43fe-B84E-286A71FD303B}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags>
+							<tag xmi:id="EAID_B732D3FC_14F9_4c3e_9705_4D60C22A5326" name="SOSI_navn" value="LRPUNKTPOSISJON"/>
+							<tag xmi:id="EAID_953F148F_A3AC_4ced_BE01_F9FFAADAEBC9" name="SOSI_lengde" value="10"/>
+							<tag xmi:id="EAID_04281084_ABC3_4ef5_8791_DEAEB7C20CA2" name="SOSI_datatype" value="D"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Realisation xmi:id="EAID_32C2A70E_1F03_431e_A611_3B824A62D3E9" start="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" end="EAID_7B02123F_8A3D_4165_8E33_ED3856B50638"/>
+					<Generalization xmi:id="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" start="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" end="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+					<Realisation xmi:id="EAID_DE934390_16F9_4b71_B069_6637E9C5CBBC" start="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" end="EAID_939E1F5E_A19C_4ced_AB5E_4D7D2A72BDA9"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" xmi:type="uml:Class" name="LineærPosisjonStrekning" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="7" ea_localid="78556" ea_eleType="element"/>
+				<properties documentation="lineær posisjon som en strekning&#xA;&#xA;Merknad: &#xA;Dette er en forenkling i forhold til ISO19148, der posisjonsangivelsene er en egen datatype LR_DistanceExpression som har igjen egenskapen DistanceAlong.&#xA;LR_DistanceExpression har også en subtype LRO_LateralOffsetDistanceExpression, som inneholder egenskapen offsetLateralDistance (avstandSide).&#xA;&#xA;&lt;i&gt;Realisering av ISO19148: LE_FromToLocation&lt;/i&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="dataType" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:42:49" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_4F01FAA9_56C1_48f2_BC6B_3E75003B3F4F" name="SOSI_navn" value="LRSTREKNING" modelElement="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={1EACEF37-0B1A-4594-8098-D1D59B88D8F6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=dataType;GUID={CD6A9266-6921-409c-8DD5-275757EE3C8D};FQName=SOSI::dataType;@ENDSTEREO;$DES;$CLT={77906CF2-7F8B-4851-8ECC-5FF4C431D02B}$CLT;$ENDXREF;$XREFPROP=$XID={78AEA0B3-6DC9-4b00-BE08-860389BBF154}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={77906CF2-7F8B-4851-8ECC-5FF4C431D02B}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+				<attributes>
+					<attribute xmi:idref="EAID_54A50C3F_CDD1_4672_ABD9_03132F3543DF" name="fraPosisjon" scope="Public">
+						<initial/>
+						<documentation value="&lt;font color=&quot;#0f0f0f&quot;&gt;startposisjon langs &lt;/font&gt;nettverkselementet,&lt;font color=&quot;#0f0f0f&quot;&gt; i henhold til referansemetoden &lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: Ref &lt;i&gt;ISO19148: fromPosition -  distanceAlong&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460259" ea_guid="{54A50C3F-CDD1-4672-ABD9-03132F3543DF}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags>
+							<tag xmi:id="EAID_C5E543FD_2F90_4712_80B6_994B6FE903CF" name="SOSI_navn" value="LRFRAPOSISJON"/>
+							<tag xmi:id="EAID_F38C7063_131C_4193_B884_30F293438F71" name="SOSI_datatype" value="D"/>
+							<tag xmi:id="EAID_B2D9A642_B531_43c0_B0EE_4B7A8D4ED67C" name="SOSI_lengde" value="10"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_B4BC3101_1F84_4b49_816C_E51469407AC7" name="tilPosisjon" scope="Public">
+						<initial/>
+						<documentation value="&lt;font color=&quot;#0f0f0f&quot;&gt;sluttposisjon langs &lt;/font&gt;nettverkselementet&lt;font color=&quot;#0f0f0f&quot;&gt;, i henhold til referansemetoden&lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: Ref &lt;i&gt;ISO19148: toPosition -  distanceAlong&lt;/i&gt; &lt;/font&gt;"/>
+						<model ea_localid="460260" ea_guid="{B4BC3101-1F84-4b49-816C-E51469407AC7}"/>
+						<properties type="Real" derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags>
+							<tag xmi:id="EAID_8BC5DDA2_6D75_4528_8D9A_CC216846DCCC" name="SOSI_datatype" value="D"/>
+							<tag xmi:id="EAID_7E18FAC0_1EE3_4eae_A5F0_23E70957436F" name="SOSI_lengde" value="10"/>
+							<tag xmi:id="EAID_0EE76F33_1D13_4c8f_862D_D657FE105CE0" name="SOSI_navn" value="LRTILPOSISJON"/>
+						</tags>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Realisation xmi:id="EAID_582AC2C8_EB4E_4581_9B9C_6780F299E4B1" start="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" end="EAID_A0EE42AB_DE84_40f7_8B34_CEE37B2FBB7C"/>
+					<Realisation xmi:id="EAID_81370E57_9B3E_4335_AD6A_ED20C1B59DDD" start="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" end="EAID_4B9FADFC_5EEC_462b_B616_9966E71C2E39"/>
+					<Generalization xmi:id="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" start="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" end="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" xmi:type="uml:Class" name="LineærReferanseMetode" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="8" ea_localid="78560" ea_eleType="element"/>
+				<properties documentation="Metode brukt for lineære referanser&#xA;&#xA;Merknad:&#xA;&#xA;Dersom offset er i bruk så angis også positiv offsetretning til side (høyre eller venstre) og vertikalt (opp/ned). &#xA;Felles for alle metoder i Norge:&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;offsetUnits: &quot;meter&quot; &lt;/li&gt;&#xA;	&lt;li&gt;positiveLateralOffsetDirection: &quot;right&quot; &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;positiveVerticalOffsetDirection: &quot;up&quot;&#xA;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;Dette er en kodeliste basert på en forenkling av ISO19148: LR_LinearReferencingMethod, som benytter 4 attributter&lt;/font&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;navn &lt;/li&gt;&#xA;	&lt;li&gt;type (absolutt, relativ eller interpolert) &lt;/li&gt;&#xA;	&lt;li&gt;måleenhet &lt;/li&gt;&#xA;	&lt;li&gt;restriksjoner/regler (constraints) &lt;/li&gt;&#xA;&lt;/ul&gt;" isSpecification="false" sType="Class" nType="0" scope="public" stereotype="codeList" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="knjetl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 09:29:20" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags>
+					<tag xmi:id="EAID_37706709_790E_43e5_A593_9371123AD022" name="SOSI_datatype" value="T" modelElement="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A"/>
+					<tag xmi:id="EAID_E8ECDD4C_7BEF_4213_85AC_DA7EA73C5F92" name="SOSI_lengde" value="20" modelElement="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A"/>
+					<tag xmi:id="EAID_14651C89_95F9_4856_A9D7_834B89DD55D3" name="SOSI_navn" value="LRLRM" modelElement="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={C7A62EA1-FD7B-4dc0-ACCC-8CF317A246DF}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=codeList;GUID={501DD750-0B07-4ecb-B8DD-69335C432572};FQName=SOSI::codeList;@ENDSTEREO;$DES;$CLT={AC001195-D20A-425b-BF8B-D7A3F2A0688A}$CLT;$ENDXREF;$XREFPROP=$XID={0E348C17-6D2C-468e-A268-C778AAA8BCAD}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={AC001195-D20A-425b-BF8B-D7A3F2A0688A}$CLT;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE" ea_attsclassified="{74B4C8B5-B624-407c-BA18-EE7E272AFCB8},{08AACBA8-5E6A-426c-A501-BC789A2756B1}"/>
+				<attributes>
+					<attribute xmi:idref="EAID_0C945466_99B9_4d6e_A202_5E92E3FF3DFC" name="Metrering" scope="Public">
+						<initial body="1"/>
+						<documentation value="posisjon fra start av nettverkselementet (lenken), angitt i meter&#xA;&#xA;Merknad: Kan ta utgangspunkt i en angitt startverdi for nettverkselementet.&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;type: &quot;absolute&quot;  &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;units: &quot;meter&quot;  &lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;"/>
+						<model ea_localid="460267" ea_guid="{0C945466-99B9-4d6e-A202-5E92E3FF3DFC}"/>
+						<properties derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_709B6C1B_FE74_4be8_8000_11E062C13293" name="Normalisert" scope="Public">
+						<initial body="2"/>
+						<documentation value="posisjon fra start av nettverkselementet, angitt som et desimaltall mellom 0 og 1, i forhold til start (0) og slutt (1) på nettverkselementet (lenken)&#xA;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;type: &quot;Interpolative&quot;  &lt;/li&gt;&#xA;	&lt;li&gt;units: &quot;0..1&quot;  &lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+						<model ea_localid="460268" ea_guid="{709B6C1B-FE74-4be8-8000-11E062C13293}"/>
+						<properties derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_90E5F8C9_8CCD_4bee_88AD_218D71895359" name="Prosent" scope="Public">
+						<initial body="3"/>
+						<documentation value="posisjon fra start av nettverkselementet, angitt i prosent av lengden på nettverkselementet (lenken)&#xA;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;type: &quot;Interpolative&quot;  &lt;/li&gt;&#xA;	&lt;li&gt;units: &quot;percent&quot;  &lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+						<model ea_localid="460269" ea_guid="{90E5F8C9-8CCD-4bee-88AD-218D71895359}"/>
+						<properties derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="2"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="IsLiteral=0;volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_A54E25F6_4A81_445b_93FB_C40477CD1754" name="Kilometrering" scope="Public">
+						<initial body="5"/>
+						<documentation value="posisjon fra start av nettverkselementet, angitt i kilometer. &#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Merknad: &lt;/font&gt;Kan ta utgangspunkt i en angitt startverdi for nettverkselementet (lenken).&#xA;&lt;font color=&quot;#0f0f0f&quot;&gt;&#xA;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;ISO19148: LR_LinearReferencingMethod:&lt;/font&gt;&#xA;&lt;ul&gt;&#xA;	&lt;li&gt;type: &quot;absolute&quot; &lt;/li&gt;&#xA;	&lt;li&gt;units: &quot;kilometer&quot; &lt;/li&gt;&#xA;&lt;/ul&gt;"/>
+						<model ea_localid="460270" ea_guid="{A54E25F6-4A81-445b-93FB-C40477CD1754}"/>
+						<properties derived="0" precision="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="3"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;IsLiteral=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Realisation xmi:id="EAID_9423188F_7598_4520_BFC0_0786B80246C8" start="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" end="EAID_C6AAD51C_2A2D_404e_A297_EB0369087A9F"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_4D58213F_A3DE_4d29_8316_B0AEF2A31EA3" xmi:type="uml:Note" scope="public">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="0" ea_localid="78559" ea_eleType="element"/>
+				<properties documentation="Identifikasjon" isSpecification="false" sType="Note" nType="1" scope="public"/>
+				<project author="onserl" version="1.0" phase="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 08:43:39" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="SOSI Lineære referanser 5.0 - nærmere INSPIRE" relatedlinks="idref1=EAID_B2FB7FC7_16BD_4979_9170_96660FB7E9C0;"/>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_4BDC00A7_791B_4c10_BC6A_BCA30BA4570C">
+				<source xmi:idref="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559">
+					<model ea_localid="78563" type="Class" name="Nettverkselement"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_CDB8B6E5_8074_434d_B021_DDB0C82D380B">
+					<model ea_localid="78547" type="Class" name="NetworkElement"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100821"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_D061EB77_A390_49ec_B14C_ED92030DC7C2">
+				<source xmi:idref="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559">
+					<model ea_localid="78563" type="Class" name="Nettverkselement"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_56AD112F_CEF9_4096_B51E_46E30673370A">
+					<model ea_localid="57590" type="Class" name="LR_Feature"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100801"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518">
+				<source xmi:idref="EAID_C7889175_24F5_4579_9316_E9BC76B0671E">
+					<model ea_localid="78557" type="Class" name="GeneralisertLenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559">
+					<model ea_localid="78563" type="Class" name="Nettverkselement"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100820"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A">
+				<source xmi:idref="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8">
+					<model ea_localid="78558" type="Class" name="LineærPosisjon"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags>
+						<tag xmi:id="EAID_A541737D_3324_4b1b_A767_FFBFBFA06747" name="SOSI_navn" value="LROBJREF_S"/>
+					</tags>
+				</source>
+				<target xmi:idref="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559">
+					<model ea_localid="78563" type="Class" name="Nettverkselement"/>
+					<role name="nettverkselement" visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags>
+						<tag xmi:id="EAID_73BC1CF6_9453_406f_B648_FE508FE9FC14" name="SOSI_navn" value="LROBJREF_T"/>
+					</tags>
+				</target>
+				<model ea_localid="100823"/>
+				<properties ea_type="Association" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels rt="+nettverkselement"/>
+				<extendedProperties/>
+				<style/>
+				<xrefs/>
+				<tags>
+					<tag xmi:id="EAID_4CDAD1EC_F4C2_409d_9C2B_FDD1FF19D616" name="SOSI_navn" value="LROBJREF"/>
+					<tag xmi:id="EAID_563F7BE8_2898_4bc1_BB68_DBFCE0240FD4" name="SOSI_assosiasjon" value="primærnøkler"/>
+				</tags>
+			</connector>
+			<connector xmi:idref="EAID_5DA6AF06_7D21_4735_B73A_435072C12B60">
+				<source xmi:idref="EAID_C7889175_24F5_4579_9316_E9BC76B0671E">
+					<model ea_localid="78557" type="Class" name="GeneralisertLenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_7D9F1E1B_778E_4249_8CDF_934B7B4C3F7D">
+					<model ea_localid="78540" type="Class" name="GeneralisedLink"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100822"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989">
+				<source xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C7889175_24F5_4579_9316_E9BC76B0671E">
+					<model ea_localid="78557" type="Class" name="GeneralisertLenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100810"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57">
+				<source xmi:idref="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3">
+					<model ea_localid="78554" type="Class" name="Lenkesekvens"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C7889175_24F5_4579_9316_E9BC76B0671E">
+					<model ea_localid="78557" type="Class" name="GeneralisertLenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100809"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_237B3734_81C5_4fb1_A047_E0767DD87EF0">
+				<source xmi:idref="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3">
+					<model ea_localid="78554" type="Class" name="Lenkesekvens"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_499363BF_41C1_42c1_BAC0_9DA42FDDB5C5">
+					<model ea_localid="78536" type="Class" name="LinkSequence"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100808"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E">
+				<source xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role name="sekvensdel" visibility="Public" targetScope="instance"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3">
+					<model ea_localid="78554" type="Class" name="Lenkesekvens"/>
+					<role name="sekvens" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100815"/>
+				<properties ea_type="Association" direction="Bi-Directional"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="1..*" lt="+sekvensdel" rb="0..1" rt="+sekvens"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_3ED7A4BB_9EA2_4254_95B4_61E4B889AA99">
+				<source xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_CCF70314_06E1_457b_A605_9B32CAE9AAEF">
+					<model ea_localid="78546" type="Class" name="Link"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100818"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_1153D212_3E7A_4b45_A28F_43757DDFEE4B">
+				<source xmi:idref="EAID_C319FD33_1E94_45ce_9E3A_AFFC56A68C96">
+					<model ea_localid="66516" type="Class" name="LineærtObjekt"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100817"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_2095F20F_E1CF_4cfb_BB55_7A0060A1EAF3">
+				<source xmi:idref="EAID_0A75F035_95C1_44aa_998F_BDBAC2CBCED1">
+					<model ea_localid="41467" type="Class" name="Veglenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100813"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_6F00C84C_3EBB_45db_8A15_DA533A787615">
+				<source xmi:idref="EAID_ED610B8C_6E4B_4aba_B93F_2C4C91DF2C39">
+					<model ea_localid="52233" type="Class" name="Veglenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100814"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_7A8219D7_E2E8_4484_AC3C_96E0F5939D1D">
+				<source xmi:idref="EAID_B8E92058_814C_4a73_B670_B546A5AFEDDC">
+					<model ea_localid="53200" type="Class" name="LineærtObjekt"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100819"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_86BDF773_4B34_4259_B3B9_F21D96C0E0CA">
+				<source xmi:idref="EAID_18634B91_EEE9_455b_A16E_1C17CED6242A">
+					<model ea_localid="52921" type="Class" name="Jernbanelenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100811"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_AD3B42BC_F7C0_47eb_81C0_04CC72B66CDF">
+				<source xmi:idref="EAID_89557A26_8A0C_4cc4_8F16_59336E7BC28B">
+					<model ea_localid="40411" type="Class" name="Jernbanelenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100812"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_D9A88DE1_1275_4e7b_9A33_C6E2CB7BE85C">
+				<source xmi:idref="EAID_BF08003C_3406_4d48_A2CC_07CFDAC11A32">
+					<model ea_localid="52944" type="Note"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100791"/>
+				<properties ea_type="NoteLink"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_F10C20D4_9F4F_4dc6_91C3_8D21FC9E3EFF">
+				<source xmi:idref="EAID_D021056C_1666_47c7_84C1_711A44CC7F12">
+					<model ea_localid="40427" type="Class" name="Bane"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8">
+					<model ea_localid="78553" type="Class" name="Lenke"/>
+					<role visibility="Public"/>
+					<type aggregation="none"/>
+					<constraints/>
+					<modifiers isOrdered="false" isNavigable="false"/>
+					<style/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100816"/>
+				<properties ea_type="Generalization"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="0" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_7D010A97_026B_4b59_926E_07E29C1D0A8C">
+				<source xmi:idref="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8">
+					<model ea_localid="78558" type="Class" name="LineærPosisjon"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E0FBB71C_16C1_4ec8_9EE9_E4FA2F82B39B">
+					<model ea_localid="78548" type="Class" name="NetworkReference"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100824"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E">
+				<source xmi:idref="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B">
+					<model ea_localid="78556" type="Class" name="LineærPosisjonStrekning"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8">
+					<model ea_localid="78558" type="Class" name="LineærPosisjon"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100803"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27">
+				<source xmi:idref="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447">
+					<model ea_localid="78555" type="Class" name="LineærPosisjonPunkt"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8">
+					<model ea_localid="78558" type="Class" name="LineærPosisjon"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100806"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={844E8C05-3C90-4a4c-9A1B-10DC481DE0C2}$XID;$NAM=CustomProperties$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$DES=@PROP=@NAME=isSubstitutable@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={A3D414C5-D785-41fc-A863-D8E8EBE61B27}$CLT;$ENDXREF;"/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_32C2A70E_1F03_431e_A611_3B824A62D3E9">
+				<source xmi:idref="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447">
+					<model ea_localid="78555" type="Class" name="LineærPosisjonPunkt"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_7B02123F_8A3D_4165_8E33_ED3856B50638">
+					<model ea_localid="78539" type="Class" name="SimplePointReference"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100805"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_DE934390_16F9_4b71_B069_6637E9C5CBBC">
+				<source xmi:idref="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447">
+					<model ea_localid="78555" type="Class" name="LineærPosisjonPunkt"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_939E1F5E_A19C_4ced_AB5E_4D7D2A72BDA9">
+					<model ea_localid="57624" type="Class" name="LE_AtLocation"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100807"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_582AC2C8_EB4E_4581_9B9C_6780F299E4B1">
+				<source xmi:idref="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B">
+					<model ea_localid="78556" type="Class" name="LineærPosisjonStrekning"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_A0EE42AB_DE84_40f7_8B34_CEE37B2FBB7C">
+					<model ea_localid="57626" type="Class" name="LE_FromToLocation"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100802"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_81370E57_9B3E_4335_AD6A_ED20C1B59DDD">
+				<source xmi:idref="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B">
+					<model ea_localid="78556" type="Class" name="LineærPosisjonStrekning"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_4B9FADFC_5EEC_462b_B616_9966E71C2E39">
+					<model ea_localid="78537" type="Class" name="SimpleLinearReference"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100804"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_9423188F_7598_4520_BFC0_0786B80246C8">
+				<source xmi:idref="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A">
+					<model ea_localid="78560" type="Class" name="LineærReferanseMetode"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_C6AAD51C_2A2D_404e_A297_EB0369087A9F">
+					<model ea_localid="57598" type="Class" name="LR_LinearReferencingMethod"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100799"/>
+				<properties ea_type="Realisation" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_B2FB7FC7_16BD_4979_9170_96660FB7E9C0">
+				<source xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_1DB15898_E0F9_4d15_A64A_07BBC8596D66">
+					<model ea_localid="40156" type="Package" name="Generelle typer 4.5"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100798"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_3E9CF4F4_CE1D_44cd_8488_E0B2B740DCB7">
+				<source xmi:idref="EAID_183AE4B7_F5CD_41d2_BFDB_4FF016C453B8">
+					<model ea_localid="51884" type="Package" name="Samferdsel generell 4.5"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100797"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_71348EB4_201C_45b6_A33E_C9BAA4431B77">
+				<source xmi:idref="EAID_0AAFB711_77CA_42de_8FF3_0DAAF2BE7026">
+					<model ea_localid="52313" type="Package" name="Vegsituasjon-4.5"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100792"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_A275B54D_E423_43e4_BA27_2C4A0238954D">
+				<source xmi:idref="EAID_11332162_6A9B_46d5_A2C1_032C44D9861A">
+					<model ea_localid="53552" type="Package" name="SOSI Ledning 4.5 ** KOPI 2013-03-25 **"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100794"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_AF9195D1_3216_4221_8376_796710461E7E">
+				<source xmi:idref="EAID_80A63E4D_B2B9_4cff_8732_94B62CAD3D3F">
+					<model ea_localid="52970" type="Package" name="Bane-20120911"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100796"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_BE841E89_E370_47eb_9B4F_84C8C390D74B">
+				<source xmi:idref="EAID_93EAB495_B382_48bc_AD78_35AC65287161">
+					<model ea_localid="41466" type="Package" name="Vegnett-4.5"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100793"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_CA44D6B7_4075_4d93_8B81_6023BA9EFF98">
+				<source xmi:idref="EAID_B4C2154F_0E0A_4292_8774_13ED90DC6F0D">
+					<model ea_localid="40395" type="Package" name="Bane-4.5"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Non-Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814">
+					<model ea_localid="78552" type="Package" name="SOSI Lineære referanser 5.0 - nærmere INSPIRE"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="100795"/>
+				<properties ea_type="Dependency" direction="Source -&gt; Destination"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public"/>
+		</primitivetypes>
+		<profiles>
+			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="thecustomprofile" nsPrefix="thecustomprofile" name="thecustomprofile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="thecustomprofile">
+					<body> Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_datatype" name="SOSI_datatype">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_datatype-base_Property" name="base_Property" association="Property_SOSI_datatype">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_datatype-SOSI_datatype" name="SOSI_datatype">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_SOSI_datatype" name="A_Property_SOSI_datatype" memberEnd="extension_SOSI_datatype SOSI_datatype-base_Property">
+					<ownedEnd xmi:id="extension_SOSI_datatype" name="extension_SOSI_datatype" type="SOSI_datatype" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_datatype SOSI_datatype-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI::featureType" name="SOSI::featureType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI::featureType-base_Class" name="base_Class" association="Class_SOSI::featureType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_SOSI::featureType" name="A_Class_SOSI::featureType" memberEnd="extension_SOSI::featureType SOSI::featureType-base_Class">
+					<ownedEnd xmi:id="extension_SOSI::featureType" name="extension_SOSI::featureType" type="SOSI::featureType" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI::featureType SOSI::featureType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="featureType" name="featureType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="featureType-base_Class" name="base_Class" association="Class_featureType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_featureType" name="A_Class_featureType" memberEnd="extension_featureType featureType-base_Class">
+					<ownedEnd xmi:id="extension_featureType" name="extension_featureType" type="featureType" isComposite="true" lower="0" upper="1" memberEnd="extension_featureType featureType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_primærnøkkel" name="SOSI_primærnøkkel">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_primærnøkkel-base_Property" name="base_Property" association="Property_SOSI_primærnøkkel">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_primærnøkkel-SOSI_primærnøkkel" name="SOSI_primærnøkkel">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_SOSI_primærnøkkel" name="A_Property_SOSI_primærnøkkel" memberEnd="extension_SOSI_primærnøkkel SOSI_primærnøkkel-base_Property">
+					<ownedEnd xmi:id="extension_SOSI_primærnøkkel" name="extension_SOSI_primærnøkkel" type="SOSI_primærnøkkel" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_primærnøkkel SOSI_primærnøkkel-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="xmlns" name="xmlns">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="xmlns-base_Package" name="base_Package" association="Package_xmlns">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="xmlns-xmlns" name="xmlns">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_xmlns" name="A_Package_xmlns" memberEnd="extension_xmlns xmlns-base_Package">
+					<ownedEnd xmi:id="extension_xmlns" name="extension_xmlns" type="xmlns" isComposite="true" lower="0" upper="1" memberEnd="extension_xmlns xmlns-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="xsdEncodingRule" name="xsdEncodingRule">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="xsdEncodingRule-base_Package" name="base_Package" association="Package_xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="xsdEncodingRule-xsdEncodingRule" name="xsdEncodingRule">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_xsdEncodingRule" name="A_Package_xsdEncodingRule" memberEnd="extension_xsdEncodingRule xsdEncodingRule-base_Package">
+					<ownedEnd xmi:id="extension_xsdEncodingRule" name="extension_xsdEncodingRule" type="xsdEncodingRule" isComposite="true" lower="0" upper="1" memberEnd="extension_xsdEncodingRule xsdEncodingRule-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Erling1" name="Erling1">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Erling1-base_Property" name="base_Property" association="Property_Erling1">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Erling1-Erling1" name="Erling1">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_Erling1" name="A_Property_Erling1" memberEnd="extension_Erling1 Erling1-base_Property">
+					<ownedEnd xmi:id="extension_Erling1" name="extension_Erling1" type="Erling1" isComposite="true" lower="0" upper="1" memberEnd="extension_Erling1 Erling1-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_spesifikasjonstype" name="SOSI_spesifikasjonstype">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_spesifikasjonstype-base_Package" name="base_Package" association="Package_SOSI_spesifikasjonstype">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_spesifikasjonstype-SOSI_spesifikasjonstype" name="SOSI_spesifikasjonstype">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_SOSI_spesifikasjonstype" name="A_Package_SOSI_spesifikasjonstype" memberEnd="extension_SOSI_spesifikasjonstype SOSI_spesifikasjonstype-base_Package">
+					<ownedEnd xmi:id="extension_SOSI_spesifikasjonstype" name="extension_SOSI_spesifikasjonstype" type="SOSI_spesifikasjonstype" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_spesifikasjonstype SOSI_spesifikasjonstype-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_assosiasjon" name="SOSI_assosiasjon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_assosiasjon-base_Association" name="base_Association" association="Association_SOSI_assosiasjon">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_assosiasjon-SOSI_assosiasjon" name="SOSI_assosiasjon">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_SOSI_assosiasjon" name="A_Association_SOSI_assosiasjon" memberEnd="extension_SOSI_assosiasjon SOSI_assosiasjon-base_Association">
+					<ownedEnd xmi:id="extension_SOSI_assosiasjon" name="extension_SOSI_assosiasjon" type="SOSI_assosiasjon" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_assosiasjon SOSI_assosiasjon-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_navn" name="SOSI_navn">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_navn-base_Property" name="base_Property" association="Property_SOSI_navn">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_navn-SOSI_navn" name="SOSI_navn">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_SOSI_navn" name="A_Property_SOSI_navn" memberEnd="extension_SOSI_navn SOSI_navn-base_Property">
+					<ownedEnd xmi:id="extension_SOSI_navn" name="extension_SOSI_navn" type="SOSI_navn" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_navn SOSI_navn-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="xsdDocument" name="xsdDocument">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="xsdDocument-base_Package" name="base_Package" association="Package_xsdDocument">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="xsdDocument-xsdDocument" name="xsdDocument">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_xsdDocument" name="A_Package_xsdDocument" memberEnd="extension_xsdDocument xsdDocument-base_Package">
+					<ownedEnd xmi:id="extension_xsdDocument" name="extension_xsdDocument" type="xsdDocument" isComposite="true" lower="0" upper="1" memberEnd="extension_xsdDocument xsdDocument-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_dataytype" name="SOSI_dataytype">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_dataytype-base_Property" name="base_Property" association="Property_SOSI_dataytype">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_dataytype-SOSI_dataytype" name="SOSI_dataytype">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_SOSI_dataytype" name="A_Property_SOSI_dataytype" memberEnd="extension_SOSI_dataytype SOSI_dataytype-base_Property">
+					<ownedEnd xmi:id="extension_SOSI_dataytype" name="extension_SOSI_dataytype" type="SOSI_dataytype" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_dataytype SOSI_dataytype-base_Property"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="applicationSchema" name="applicationSchema">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="applicationSchema-base_Package" name="base_Package" association="Package_applicationSchema">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_applicationSchema" name="A_Package_applicationSchema" memberEnd="extension_applicationSchema applicationSchema-base_Package">
+					<ownedEnd xmi:id="extension_applicationSchema" name="extension_applicationSchema" type="applicationSchema" isComposite="true" lower="0" upper="1" memberEnd="extension_applicationSchema applicationSchema-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI::codeList" name="SOSI::codeList">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI::codeList-base_Class" name="base_Class" association="Class_SOSI::codeList">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_SOSI::codeList" name="A_Class_SOSI::codeList" memberEnd="extension_SOSI::codeList SOSI::codeList-base_Class">
+					<ownedEnd xmi:id="extension_SOSI::codeList" name="extension_SOSI::codeList" type="SOSI::codeList" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI::codeList SOSI::codeList-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI::dataType" name="SOSI::dataType">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI::dataType-base_Class" name="base_Class" association="Class_SOSI::dataType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_SOSI::dataType" name="A_Class_SOSI::dataType" memberEnd="extension_SOSI::dataType SOSI::dataType-base_Class">
+					<ownedEnd xmi:id="extension_SOSI::dataType" name="extension_SOSI::dataType" type="SOSI::dataType" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI::dataType SOSI::dataType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_fremmednøkkel" name="SOSI_fremmednøkkel">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_fremmednøkkel-base_Class" name="base_Class" association="Class_SOSI_fremmednøkkel">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_fremmednøkkel-SOSI_fremmednøkkel" name="SOSI_fremmednøkkel">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_SOSI_fremmednøkkel" name="A_Class_SOSI_fremmednøkkel" memberEnd="extension_SOSI_fremmednøkkel SOSI_fremmednøkkel-base_Class">
+					<ownedEnd xmi:id="extension_SOSI_fremmednøkkel" name="extension_SOSI_fremmednøkkel" type="SOSI_fremmednøkkel" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_fremmednøkkel SOSI_fremmednøkkel-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_produktgruppe" name="SOSI_produktgruppe">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_produktgruppe-base_Package" name="base_Package" association="Package_SOSI_produktgruppe">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_produktgruppe-SOSI_produktgruppe" name="SOSI_produktgruppe">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_SOSI_produktgruppe" name="A_Package_SOSI_produktgruppe" memberEnd="extension_SOSI_produktgruppe SOSI_produktgruppe-base_Package">
+					<ownedEnd xmi:id="extension_SOSI_produktgruppe" name="extension_SOSI_produktgruppe" type="SOSI_produktgruppe" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_produktgruppe SOSI_produktgruppe-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="SOSI_lengde" name="SOSI_lengde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_lengde-base_Property" name="base_Property" association="Property_SOSI_lengde">
+						<type href="http://schema.omg.org/spec/UML/2.1/Property"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="SOSI_lengde-SOSI_lengde" name="SOSI_lengde">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Property_SOSI_lengde" name="A_Property_SOSI_lengde" memberEnd="extension_SOSI_lengde SOSI_lengde-base_Property">
+					<ownedEnd xmi:id="extension_SOSI_lengde" name="extension_SOSI_lengde" type="SOSI_lengde" isComposite="true" lower="0" upper="1" memberEnd="extension_SOSI_lengde SOSI_lengde-base_Property"/>
+				</packagedElement>
+			</uml:Profile>
+			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="7DE4F46B-2" nsPrefix="NIEM_Common_Profile" name="NIEM_Common_Profile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="7DE4F46B-2">
+					<body>NIEM_Common_Profile Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="AdapterType" name="AdapterType">
+					<generalization xmi:type="uml:Generalization" xmi:id="AdapterType_NIEMType_generalization" general="NIEMType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ObjectType" name="ObjectType">
+					<generalization xmi:type="uml:Generalization" xmi:id="ObjectType_NIEMType_generalization" general="NIEMType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Namespace" name="Namespace">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Namespace-base_Package" name="base_Package" association="Package_Namespace">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Namespace-version" name="version">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Namespace-isConformant" name="isConformant">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Namespace-defaultPrefix" name="defaultPrefix">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Namespace-targetNamespace" name="targetNamespace">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Namespace" name="A_Package_Namespace" memberEnd="extension_Namespace Namespace-base_Package">
+					<ownedEnd xmi:id="extension_Namespace" name="extension_Namespace" type="Namespace" isComposite="true" lower="0" upper="1" memberEnd="extension_Namespace Namespace-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="References" name="References">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="References-base_Realization" name="base_Realization" association="Realization_References">
+						<type href="http://schema.omg.org/spec/UML/2.1/Realization"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Realization_References" name="A_Realization_References" memberEnd="extension_References References-base_Realization">
+					<ownedEnd xmi:id="extension_References" name="extension_References" type="References" isComposite="true" lower="0" upper="1" memberEnd="extension_References References-base_Realization"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Choice" name="Choice">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Choice-base_Class" name="base_Class" association="Class_Choice">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Choice" name="A_Class_Choice" memberEnd="extension_Choice Choice-base_Class">
+					<ownedEnd xmi:id="extension_Choice" name="extension_Choice" type="Choice" isComposite="true" lower="0" upper="1" memberEnd="extension_Choice Choice-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="UnionOf" name="UnionOf">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="UnionOf-base_Usage" name="base_Usage" association="Usage_UnionOf">
+						<type href="http://schema.omg.org/spec/UML/2.1/Usage"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Usage_UnionOf" name="A_Usage_UnionOf" memberEnd="extension_UnionOf UnionOf-base_Usage">
+					<ownedEnd xmi:id="extension_UnionOf" name="extension_UnionOf" type="UnionOf" isComposite="true" lower="0" upper="1" memberEnd="extension_UnionOf UnionOf-base_Usage"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="ValueRestriction" name="ValueRestriction">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-base_DataType" name="base_DataType" association="DataType_ValueRestriction">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-pattern" name="pattern">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-maxInclusive" name="maxInclusive">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-length" name="length">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-fractionDigits" name="fractionDigits">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-maxLength" name="maxLength">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-maxExclusive" name="maxExclusive">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-minLength" name="minLength">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-minInclusive" name="minInclusive">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-minExclusive" name="minExclusive">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="ValueRestriction-totalDigits" name="totalDigits">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_ValueRestriction" name="A_DataType_ValueRestriction" memberEnd="extension_ValueRestriction ValueRestriction-base_DataType">
+					<ownedEnd xmi:id="extension_ValueRestriction" name="extension_ValueRestriction" type="ValueRestriction" isComposite="true" lower="0" upper="1" memberEnd="extension_ValueRestriction ValueRestriction-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Union" name="Union">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Union-base_DataType" name="base_DataType" association="DataType_Union">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_Union" name="A_DataType_Union" memberEnd="extension_Union Union-base_DataType">
+					<ownedEnd xmi:id="extension_Union" name="extension_Union" type="Union" isComposite="true" lower="0" upper="1" memberEnd="extension_Union Union-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="AugmentationApplication" name="AugmentationApplication">
+					<generalization xmi:type="uml:Generalization" xmi:id="AugmentationApplication_Application_generalization" general="Application"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="AugmentationType" name="AugmentationType">
+					<generalization xmi:type="uml:Generalization" xmi:id="AugmentationType_NIEMType_generalization" general="NIEMType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="NIEMType" name="NIEMType" isAbstract="true">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="NIEMType-base_Class" name="base_Class" association="Class_NIEMType">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_NIEMType" name="A_Class_NIEMType" memberEnd="extension_NIEMType NIEMType-base_Class">
+					<ownedEnd xmi:id="extension_NIEMType" name="extension_NIEMType" type="NIEMType" isComposite="true" lower="0" upper="1" memberEnd="extension_NIEMType NIEMType-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Documentation" name="Documentation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Documentation-base_Note" name="base_Note" association="Note_Documentation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Note"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Note_Documentation" name="A_Note_Documentation" memberEnd="extension_Documentation Documentation-base_Note">
+					<ownedEnd xmi:id="extension_Documentation" name="extension_Documentation" type="Documentation" isComposite="true" lower="0" upper="1" memberEnd="extension_Documentation Documentation-base_Note"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="PropertyHolder" name="PropertyHolder">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="PropertyHolder-base_Class" name="base_Class" association="Class_PropertyHolder">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_PropertyHolder" name="A_Class_PropertyHolder" memberEnd="extension_PropertyHolder PropertyHolder-base_Class">
+					<ownedEnd xmi:id="extension_PropertyHolder" name="extension_PropertyHolder" type="PropertyHolder" isComposite="true" lower="0" upper="1" memberEnd="extension_PropertyHolder PropertyHolder-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="MetadataApplication" name="MetadataApplication">
+					<generalization xmi:type="uml:Generalization" xmi:id="MetadataApplication_Application_generalization" general="Application"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Application" name="Application" isAbstract="true">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Application-base_Usage" name="base_Usage" association="Usage_Application">
+						<type href="http://schema.omg.org/spec/UML/2.1/Usage"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Usage_Application" name="A_Usage_Application" memberEnd="extension_Application Application-base_Usage">
+					<ownedEnd xmi:id="extension_Application" name="extension_Application" type="Application" isComposite="true" lower="0" upper="1" memberEnd="extension_Application Application-base_Usage"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="MetadataType" name="MetadataType">
+					<generalization xmi:type="uml:Generalization" xmi:id="MetadataType_NIEMType_generalization" general="NIEMType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="List" name="List">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="List-base_DataType" name="base_DataType" association="DataType_List">
+						<type href="http://schema.omg.org/spec/UML/2.1/DataType"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_List" name="A_DataType_List" memberEnd="extension_List List-base_DataType">
+					<ownedEnd xmi:id="extension_List" name="extension_List" type="List" isComposite="true" lower="0" upper="1" memberEnd="extension_List List-base_DataType"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="AssociationType" name="AssociationType">
+					<generalization xmi:type="uml:Generalization" xmi:id="AssociationType_NIEMType_generalization" general="NIEMType"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="AssociationType-base_AssociationClass" name="base_AssociationClass" association="AssociationClass_AssociationType">
+						<type href="http://schema.omg.org/spec/UML/2.1/AssociationClass"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="AssociationClass_AssociationType" name="A_AssociationClass_AssociationType" memberEnd="extension_AssociationType AssociationType-base_AssociationClass">
+					<ownedEnd xmi:id="extension_AssociationType" name="extension_AssociationType" type="AssociationType" isComposite="true" lower="0" upper="1" memberEnd="extension_AssociationType AssociationType-base_AssociationClass"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Restriction" name="Restriction">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Restriction-base_Realization" name="base_Realization" association="Realization_Restriction">
+						<type href="http://schema.omg.org/spec/UML/2.1/Realization"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Realization_Restriction" name="A_Realization_Restriction" memberEnd="extension_Restriction Restriction-base_Realization">
+					<ownedEnd xmi:id="extension_Restriction" name="extension_Restriction" type="Restriction" isComposite="true" lower="0" upper="1" memberEnd="extension_Restriction Restriction-base_Realization"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
+		<diagrams>
+			<diagram xmi:id="EAID_F3DD0886_05D2_46c2_A57C_D0BBB4970710">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26087" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="7"/>
+				<properties name="Figur 7 Lenke med eksempel" type="Logical"/>
+				<project author="knjetl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 08:53:37"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=795;DocSize.cy=1138;ShowDetails=0;Orientation=P;Zoom=150;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=1;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;SuppressedCompartments=;SaveTag=348D7D66;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=83;Top=7;Right=240;Bottom=77;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="1" style="DUID=96DFCF73;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=41;Top=119;Right=279;Bottom=204;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=6E3AFCE1;"/>
+					<element geometry="Left=41;Top=365;Right=279;Bottom=569;" subject="EAID_0A75F035_95C1_44aa_998F_BDBAC2CBCED1" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=D1D3C8D3;"/>
+					<element geometry="Left=41;Top=246;Right=279;Bottom=323;" subject="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" seqno="4" style="AttCustom=0;OpCustom=0;RzO=1;PType=0;DUID=8A65140C;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=3;EOID=96DFCF73;SOID=6E3AFCE1;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=1;SY=0;EX=9;EY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2095F20F_E1CF_4cfb_BB55_7A0060A1EAF3" style="Mode=2;EOID=8A65140C;SOID=D1D3C8D3;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" style="Mode=2;EOID=6E3AFCE1;SOID=8A65140C;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_0535D56D_61C5_47a7_A1D3_F80653266F2F">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26088" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="8"/>
+				<properties name="Figur 8 Lineær posisjon" type="Logical"/>
+				<project author="knjetl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:44:45"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=113;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=0;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;Layout=l=20:c=20:d=0:cr=1:la=2:i=1:it=4:a=0:;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=0;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;SuppressedCompartments=;SaveTag=2EA75BF4;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=124;Top=39;Right=281;Bottom=109;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="1" style="DUID=95CDE535;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=43;Top=319;Right=133;Bottom=389;" subject="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=598D6275;"/>
+					<element geometry="Left=85;Top=159;Right=323;Bottom=244;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=6092F0C4;"/>
+					<element geometry="Left=259;Top=319;Right=389;Bottom=407;" subject="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" seqno="4" style="AttCustom=0;OpCustom=0;RzO=1;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;FQTag=1;DUID=37F5B765;"/>
+					<element geometry="Left=441;Top=24;Right=805;Bottom=148;" subject="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" seqno="5" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;FQTag=1;DUID=A32FAB3F;Constraint=1;PType=0;"/>
+					<element geometry="Left=645;Top=233;Right=778;Bottom=303;" subject="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" seqno="6" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;FQTag=1;DUID=07BCCF8E;"/>
+					<element geometry="Left=497;Top=233;Right=611;Bottom=303;" subject="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" seqno="7" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;FQTag=1;DUID=07BCCF8E;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=2;EOID=95CDE535;SOID=6092F0C4;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=56:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=41:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" style="Mode=2;EOID=598D6275;SOID=37F5B765;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=322:-294$204:-294$;" subject="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" style="Mode=3;EOID=6092F0C4;SOID=37F5B765;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=88:-294$204:-294$;" subject="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" style="Mode=3;EOID=6092F0C4;SOID=598D6275;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=85:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" style="Mode=2;EOID=95CDE535;SOID=A32FAB3F;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=553:-198$623:-198$;" subject="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" style="Mode=3;EOID=A32FAB3F;SOID=07BCCF8E;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=710:-198$623:-198$;" subject="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" style="Mode=3;EOID=A32FAB3F;SOID=07BCCF8E;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_230E8E0F_5069_4974_AFCD_BAA495FF8CA3">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26089" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="1"/>
+				<properties name="Figur 2 Pakkeavhengighet" type="Logical"/>
+				<project author="onserl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 08:43:39"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=850;DocSize.cy=1098;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=1;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="SaveTag=EB606C6B;ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=271;Top=142;Right=386;Bottom=197;" subject="EAID_4D58213F_A3DE_4d29_8316_B0AEF2A31EA3" seqno="1" style="DUID=531C9E7E;"/>
+					<element geometry="Left=47;Top=40;Right=217;Bottom=120;" subject="EAID_1DB15898_E0F9_4d15_A64A_07BBC8596D66" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;RzO=1;DUID=A5D5C73D;"/>
+					<element geometry="Left=46;Top=218;Right=216;Bottom=298;" subject="EAID_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;OpPro=0;OpPri=0;OpPub=0;OpPkg=0;AttCustom=0;OpCustom=0;RzO=1;DUID=7F250E18;"/>
+					<element geometry="SX=3;SY=22;EX=2;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_B2FB7FC7_16BD_4979_9170_96660FB7E9C0" style="Mode=3;EOID=5929E5F2;SOID=67723B1B;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_8C888F19_9132_4fbb_AEFE_0D935AFD3ED1">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26090" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="6"/>
+				<properties name="Figur 6 Lenke" type="Logical"/>
+				<project author="knjetl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 08:53:29"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=795;DocSize.cy=1138;ShowDetails=0;Orientation=P;Zoom=150;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;SaveTag=F4847398;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=129;Top=10;Right=286;Bottom=80;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="1" style="DUID=9A560FE3;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=87;Top=127;Right=325;Bottom=212;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;Constraint=1;AttCustom=0;OpCustom=0;PType=0;RzO=1;DUID=8E817B33;"/>
+					<element geometry="Left=21;Top=310;Right=151;Bottom=380;" subject="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=81CF9657;"/>
+					<element geometry="Left=383;Top=127;Right=511;Bottom=225;" subject="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" seqno="4" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttCustom=0;OpCustom=0;RzO=1;DUID=147105BB;"/>
+					<element geometry="Left=283;Top=310;Right=505;Bottom=434;" subject="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" seqno="5" style="AttCustom=0;OpCustom=0;RzO=1;Constraint=1;PType=0;DUID=8A65140C;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=3;EOID=9A560FE3;SOID=8E817B33;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=8;EX=0;EY=-1;EDGE=4;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=56:CY=13:OX=0:OY=-1:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=41:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" style="Mode=2;EOID=81CF9657;SOID=8A65140C;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=392:-262$206:-262$;" subject="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" style="Mode=3;EOID=8E817B33;SOID=8A65140C;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=86:-262$206:-262$;" subject="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" style="Mode=3;EOID=8E817B33;SOID=81CF9657;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_A63FD29D_0108_44ab_BF43_527F7FDA43D1">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26091" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="4"/>
+				<properties name="Figur 5 Hovedskjema" type="Logical"/>
+				<project author="onserl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 10:42:49"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1138;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=88;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;SaveTag=FF09C056;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=161;Top=18;Right=318;Bottom=88;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="1" style="DUID=47AB02D8;"/>
+					<element geometry="Left=114;Top=133;Right=352;Bottom=204;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="2" style="DUID=56DD2DA2;"/>
+					<element geometry="Left=23;Top=305;Right=180;Bottom=375;" subject="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" seqno="3" style="DUID=56176312;"/>
+					<element geometry="Left=84;Top=505;Right=262;Bottom=590;" subject="EAID_953CE893_18AF_4923_B143_4BC4CCB7221B" seqno="4" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=B99118B1;"/>
+					<element geometry="Left=761;Top=216;Right=894;Bottom=286;" subject="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" seqno="5" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=C6EF375C;"/>
+					<element geometry="Left=311;Top=495;Right=439;Bottom=593;" subject="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" seqno="6" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttCustom=0;OpCustom=0;RzO=1;DUID=59C05423;"/>
+					<element geometry="Left=580;Top=216;Right=713;Bottom=286;" subject="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" seqno="7" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=1EE79402;"/>
+					<element geometry="Left=568;Top=11;Right=932;Bottom=135;" subject="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" seqno="8" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;Constraint=1;PType=0;DUID=165E9561;"/>
+					<element geometry="Left=306;Top=305;Right=528;Bottom=429;" subject="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" seqno="9" style="AttCustom=0;OpCustom=0;RzO=1;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;Constraint=1;PType=0;DUID=F01269DD;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=2;EOID=47AB02D8;SOID=56DD2DA2;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=56:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=41:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" style="Mode=2;EOID=56176312;SOID=F01269DD;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=415:-254$233:-254$;" subject="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" style="Mode=3;EOID=56DD2DA2;SOID=F01269DD;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=100:-254$233:-254$;" subject="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" style="Mode=3;EOID=56DD2DA2;SOID=56176312;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=85:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" style="Mode=2;EOID=47AB02D8;SOID=165E9561;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=646:-185$750:-185$;" subject="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" style="Mode=3;EOID=165E9561;SOID=1EE79402;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=826:-185$750:-185$;" subject="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" style="Mode=3;EOID=165E9561;SOID=C6EF375C;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_B5C59C21_A899_4de2_90CC_5CCA6546A0AD">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26092" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="2"/>
+				<properties name="Figur 3 Forholdet til ISO 19148 - Linear referencing system" type="Logical"/>
+				<project author="onserl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 09:30:06"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1138;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=40;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;SuppressedCompartments=;SaveTag=6A7317BB;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=690;Top=77;Right=847;Bottom=147;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="1" style="DUID=CC620442;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=671;Top=197;Right=909;Bottom=282;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="2" style="DUID=FFD90A9F;"/>
+					<element geometry="Left=17;Top=178;Right=343;Bottom=289;" subject="EAID_0A0B1A56_D850_4ed8_B91F_5449C78AF1A2" seqno="3" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttCustom=0;OpCustom=0;PType=0;RzO=3;DUID=70EEC8D8;BCol=12632256;"/>
+					<element geometry="Left=338;Top=406;Right=619;Bottom=476;" subject="EAID_939E1F5E_A19C_4ced_AB5E_4D7D2A72BDA9" seqno="4" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=4E411796;BCol=12632256;"/>
+					<element geometry="Left=330;Top=516;Right=625;Bottom=614;" subject="EAID_A0EE42AB_DE84_40f7_8B34_CEE37B2FBB7C" seqno="5" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=7F4B3709;BCol=12632256;"/>
+					<element geometry="Left=227;Top=22;Right=406;Bottom=120;" subject="EAID_C6AAD51C_2A2D_404e_A297_EB0369087A9F" seqno="6" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=6D544DB5;BCol=12632256;"/>
+					<element geometry="Left=17;Top=22;Right=162;Bottom=107;" subject="EAID_3470BB00_A160_4f5b_A25B_6F4CD03EC666" seqno="7" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=902C32F1;BCol=12632256;"/>
+					<element geometry="Left=17;Top=496;Right=199;Bottom=566;" subject="EAID_5AEA5D1A_6208_40f2_A64D_FC45C0FFFAF3" seqno="8" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=8708126F;BCol=12632256;"/>
+					<element geometry="Left=395;Top=191;Right=574;Bottom=261;" subject="EAID_56AD112F_CEF9_4096_B51E_46E30673370A" seqno="9" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=EFAFACC7;BCol=12632256;"/>
+					<element geometry="Left=17;Top=355;Right=202;Bottom=425;" subject="EAID_035FD4DC_0543_4997_BE8C_E177D3ADB343" seqno="10" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=C8A89C07;BCol=12632256;"/>
+					<element geometry="Left=471;Top=22;Right=599;Bottom=120;" subject="EAID_AC001195_D20A_425b_BF8B_D7A3F2A0688A" seqno="11" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;AttCustom=0;OpCustom=0;RzO=1;DUID=250D1C7E;"/>
+					<element geometry="Left=692;Top=526;Right=824;Bottom=596;" subject="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" seqno="12" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=44F06882;"/>
+					<element geometry="Left=692;Top=433;Right=805;Bottom=503;" subject="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" seqno="13" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=FD6FE867;"/>
+					<element geometry="Left=731;Top=308;Right=1019;Bottom=400;" subject="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" seqno="14" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=8DF43799;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=2;EOID=CC620442;SOID=FFD90A9F;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_582AC2C8_EB4E_4581_9B9C_6780F299E4B1" style="Mode=2;EOID=7F4B3709;SOID=44F06882;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-78;SY=-5;EX=87;EY=34;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=629:-108$626:-218$;" subject="EAID_D061EB77_A390_49ec_B14C_ED92030DC7C2" style="Mode=3;EOID=EFAFACC7;SOID=CC620442;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_9423188F_7598_4520_BFC0_0786B80246C8" style="Mode=2;EOID=6D544DB5;SOID=250D1C7E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=96;SY=-29;EX=78;EY=-4;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=CX=85:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=928:-284$928:-218$;" subject="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" style="Mode=2;EOID=CC620442;SOID=8DF43799;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_1750F679_0043_46fa_8E30_FD2FABACCE20" style="Mode=3;EOID=70EEC8D8;SOID=EFAFACC7;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=0;SY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=252:-565$252:-390$;" subject="EAID_9CF65A73_878D_43df_9EAB_C1E3A332F94A" style="Mode=3;EOID=C8A89C07;SOID=7F4B3709;Color=-1;LWidth=0;TREE=H;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=0;SY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=252:-439$252:-390$;" subject="EAID_A03F0EBC_E04A_49cd_9218_DC6602BE73D9" style="Mode=3;EOID=C8A89C07;SOID=4E411796;Color=-1;LWidth=0;TREE=H;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_DE934390_16F9_4b71_B069_6637E9C5CBBC" style="Mode=2;EOID=4E411796;SOID=FD6FE867;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=2;EX=0;EY=0;SX=0;SY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=875:-468$;" subject="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" style="Mode=3;EOID=8DF43799;SOID=FD6FE867;Color=-1;LWidth=0;TREE=LV;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=875:-561$;" subject="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" style="Mode=3;EOID=8DF43799;SOID=44F06882;Color=-1;LWidth=0;TREE=LV;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_4D91FB1C_A2ED_4ae6_95D6_850DA43B4604">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26094" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="9"/>
+				<properties name="Figur 9 Lineær posisjon med eksempel" type="Logical"/>
+				<project author="knjetl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 09:15:33"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=113;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=1;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;Layout=l=20:c=20:d=0:cr=1:la=2:i=1:it=4:a=0:;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;ShowFQN=1;SuppressedCompartments=;SaveTag=FD543F76;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=58;Top=21;Right=296;Bottom=91;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="1" style="DUID=3BE9A24B;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=58;Top=122;Right=296;Bottom=207;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=1A5D778B;"/>
+					<element geometry="Left=58;Top=339;Right=296;Bottom=538;" subject="EAID_0A75F035_95C1_44aa_998F_BDBAC2CBCED1" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=6E57B116;"/>
+					<element geometry="Left=436;Top=338;Right=684;Bottom=462;" subject="EAID_1D859413_47F9_45c0_8228_D541E04D8762" seqno="4" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=85875743;"/>
+					<element geometry="Left=58;Top=238;Right=296;Bottom=308;" subject="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" seqno="5" style="AttCustom=0;OpCustom=0;RzO=1;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;italic=0;ul=0;charset=0;pitch=0;DUID=2BA0F1FD;"/>
+					<element geometry="Left=412;Top=22;Right=700;Bottom=107;" subject="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" seqno="6" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;DUID=3FFB94EF;"/>
+					<element geometry="Left=586;Top=191;Right=749;Bottom=265;" subject="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" seqno="7" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;DUID=07BCCF8E;"/>
+					<element geometry="Left=392;Top=191;Right=506;Bottom=261;" subject="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" seqno="8" style="NSL=0;RzO=1;AttCustom=0;OpCustom=0;DUID=07BCCF8E;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=3;EOID=3BE9A24B;SOID=1A5D778B;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=-3;SY=-1;EX=7;EY=2;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2095F20F_E1CF_4cfb_BB55_7A0060A1EAF3" style="Mode=2;EOID=2BA0F1FD;SOID=6E57B116;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" style="Mode=2;EOID=1A5D778B;SOID=2BA0F1FD;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=CX=85:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" style="Mode=2;EOID=3BE9A24B;SOID=3FFB94EF;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=449:-157$556:-157$;" subject="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" style="Mode=3;EOID=3FFB94EF;SOID=07BCCF8E;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=667:-157$556:-157$;" subject="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" style="Mode=3;EOID=3FFB94EF;SOID=07BCCF8E;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_78F7BDD2_0341_47dc_854D_3130EFF728D0">
+				<model package="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" localID="26095" owner="EAPK_F7ED89FA_3DEB_48de_B6A9_84A5DDD4A814" tpos="3"/>
+				<properties name="Figur 4 Forholdet til INSPIRE Generic Network Model" type="Logical"/>
+				<project author="knjetl" version="1.0" created="2015-09-30 08:43:39" modified="2015-09-30 09:19:37"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=1138;DocSize.cy=795;ShowDetails=0;Orientation=L;Zoom=75;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;SaveTag=266DE383;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;hl=1;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;"/>
+				<extendedProperties/>
+				<elements>
+					<element geometry="Left=471;Top=279;Right=760;Bottom=364;" subject="EAID_EAC325C3_7D86_4b75_8DA4_B93990797AF8" seqno="1" style="DUID=E89F041E;NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;"/>
+					<element geometry="Left=317;Top=185;Right=555;Bottom=255;" subject="EAID_C7889175_24F5_4579_9316_E9BC76B0671E" seqno="2" style="DUID=7019F781;"/>
+					<element geometry="Left=350;Top=79;Right=507;Bottom=149;" subject="EAID_18BC92AE_F6CD_419c_B0D5_4D4676BBE559" seqno="3" style="DUID=C9AD79D7;"/>
+					<element geometry="Left=49;Top=465;Right=179;Bottom=535;" subject="EAID_03E2BE41_2BE0_4aa7_85DF_487B125838C3" seqno="4" style="DUID=6B0D759D;"/>
+					<element geometry="Left=352;Top=447;Right=482;Bottom=535;" subject="EAID_47BEF1AE_1E5E_46e2_946E_DCE1EA667FD8" seqno="5" style="DUID=A14FD08C;"/>
+					<element geometry="Left=771;Top=448;Right=904;Bottom=536;" subject="EAID_77906CF2_7F8B_4851_8ECC_5FF4C431D02B" seqno="6" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=525B6F8A;"/>
+					<element geometry="Left=536;Top=447;Right=669;Bottom=535;" subject="EAID_85A7ECD4_99BD_42ee_9AF0_49439BB2B447" seqno="7" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=F5A38456;"/>
+					<element geometry="Left=789;Top=302;Right=906;Bottom=404;" subject="EAID_7B02123F_8A3D_4165_8E33_ED3856B50638" seqno="8" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=8FBE2C55;BCol=13434828;"/>
+					<element geometry="Left=826;Top=140;Right=1040;Bottom=216;" subject="EAID_4816E8A8_A1DB_4ee3_B43F_8E00AA7D07A6" seqno="9" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=4860B554;BCol=13434828;"/>
+					<element geometry="Left=932;Top=295;Right=1055;Bottom=426;" subject="EAID_4B9FADFC_5EEC_462b_B616_9966E71C2E39" seqno="10" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=E523382B;BCol=13434828;"/>
+					<element geometry="Left=43;Top=41;Right=243;Bottom=95;" subject="EAID_CDB8B6E5_8074_434d_B021_DDB0C82D380B" seqno="11" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttPro=0;AttPri=0;AttPub=0;AttPkg=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;DUID=643636F5;BCol=13434828;"/>
+					<element geometry="Left=647;Top=30;Right=746;Bottom=100;" subject="EAID_E0FBB71C_16C1_4ec8_9EE9_E4FA2F82B39B" seqno="12" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;AttCustom=0;OpCustom=0;PType=0;RzO=1;DUID=35A48B85;BCol=13434828;"/>
+					<element geometry="Left=18;Top=302;Right=195;Bottom=372;" subject="EAID_499363BF_41C1_42c1_BAC0_9DA42FDDB5C5" seqno="13" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=BD4AE358;BCol=13434828;"/>
+					<element geometry="Left=217;Top=303;Right=393;Bottom=373;" subject="EAID_CCF70314_06E1_457b_A605_9B32CAE9AAEF" seqno="14" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=8168B352;BCol=13434828;"/>
+					<element geometry="Left=93;Top=147;Right=183;Bottom=217;" subject="EAID_7D9F1E1B_778E_4249_8CDF_934B7B4C3F7D" seqno="15" style="NSL=0;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=D73C63B4;BCol=13434828;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=990:-266$933:-266$;" subject="EAID_6CE2C3B0_9A44_4dc7_80CA_2EFE97CAD6A0" style="Mode=3;EOID=4860B554;SOID=E523382B;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=-58;SY=-44;EX=-58;EY=-50;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_81370E57_9B3E_4335_AD6A_ED20C1B59DDD" style="Mode=2;EOID=E523382B;SOID=525B6F8A;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=42;SY=44;EX=0;EY=-12;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_32C2A70E_1F03_431e_A611_3B824A62D3E9" style="Mode=2;EOID=8FBE2C55;SOID=F5A38456;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=0;SY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=602:-414$615:-414$;" subject="EAID_A3D414C5_D785_41fc_A863_D8E8EBE61B27" style="Mode=3;EOID=E89F041E;SOID=F5A38456;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=-29;SY=0;EX=-29;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_237B3734_81C5_4fb1_A047_E0767DD87EF0" style="Mode=2;EOID=BD4AE358;SOID=6B0D759D;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=0;SY=0;EX=1;EY=35;$LLB=;LLT=;LMT=;LMB=;LRT=CX=85:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=;IRHS=;ILHS=;Path=615:-114$;" subject="EAID_CD352A46_DBBB_4c12_963D_35AB6516027A" style="Mode=3;EOID=C9AD79D7;SOID=E89F041E;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
+					<element geometry="SX=-38;SY=1;EX=-38;EY=1;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_7D010A97_026B_4b59_926E_07E29C1D0A8C" style="Mode=2;EOID=35A48B85;SOID=E89F041E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=0;SY=9;EX=0;EY=12;$LLB=;LLT=;LMT=;LMB=;LRT=CX=45:CY=26:OX=3:OY=-19:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=6:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_93EB4CF6_0989_4aad_839B_8C3C65ACA3B4" style="Mode=3;EOID=643636F5;SOID=35A48B85;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=305:-267$138:-267$;" subject="EAID_F8FA3CDE_FA3F_42da_8026_6DA24EDD2648" style="Mode=3;EOID=D73C63B4;SOID=8168B352;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="EDGE=1;SX=0;SY=0;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=835:-414$615:-414$;" subject="EAID_8E37AAFE_C95A_404f_9F31_60FB9C18301E" style="Mode=3;EOID=E89F041E;SOID=525B6F8A;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=106:-267$138:-267$;" subject="EAID_7F9668C2_CA31_4844_9746_731B1E9857B9" style="Mode=3;EOID=D73C63B4;SOID=BD4AE358;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4130A125_DD75_4b98_9FBF_CC2D2C9D0518" style="Mode=2;EOID=C9AD79D7;SOID=7019F781;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=845:-266$933:-266$;" subject="EAID_3457F757_71EC_4ec2_A985_11468455C05E" style="Mode=3;EOID=4860B554;SOID=8FBE2C55;Color=-1;LWidth=0;TREE=V;Hidden=0;"/>
+					<element geometry="EDGE=4;SX=-68;SY=-21;EX=-10;EY=-18;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_AF07F3D5_28D5_4d58_BAAD_7C82ACA1F8AE" style="Mode=2;EOID=35A48B85;SOID=4860B554;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-78;SY=26;EX=92;EY=-27;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_4BDC00A7_791B_4c10_BC6A_BCA30BA4570C" style="Mode=3;EOID=643636F5;SOID=C9AD79D7;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
+					<element geometry="SX=0;SY=5;EX=0;EY=5;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_5DA6AF06_7D21_4735_B73A_435072C12B60" style="Mode=2;EOID=D73C63B4;SOID=7019F781;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-8;SY=-1;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=114:-426$417:-426$;" subject="EAID_AF8815D2_B0C5_49fc_AB02_120942406A57" style="Mode=3;EOID=7019F781;SOID=6B0D759D;Color=-1;LWidth=0;TREE=OS;Hidden=0;"/>
+					<element geometry="SX=0;SY=3;EX=0;EY=3;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_506976A8_E204_4ca3_BE88_D1CB9ACE9989" style="Mode=2;EOID=7019F781;SOID=A14FD08C;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=4;$LLB=CX=16:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=56:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=CX=41:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LRB=CX=18:CY=13:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;IRHS=;ILHS=;Path=;" subject="EAID_4B824BB3_F1B6_4b0d_B7DD_066044371A2E" style="Mode=2;EOID=6B0D759D;SOID=A14FD08C;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_3ED7A4BB_9EA2_4254_95B4_61E4B889AA99" style="Mode=2;EOID=8168B352;SOID=A14FD08C;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="EDGE=1;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_40A50DF4_33F2_4471_9DD8_76FA625B1EF6" style="Mode=3;EOID=643636F5;SOID=D73C63B4;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+		<EAStub xmi:id="EAID_953CE893_18AF_4923_B143_4BC4CCB7221B" name="Identifikasjon" UMLType="Class"/>
+		<EAStub xmi:id="EAID_281080FD_4373_4bf1_8F9E_606805BF9A0D" name="Real" UMLType="Class"/>
+		<EAStub xmi:id="EAID_453EB6B1_D543_4f3d_BC53_E79283F6736C" name="CharacterString" UMLType="Class"/>
+	</xmi:Extension>
+</xmi:XMI>
